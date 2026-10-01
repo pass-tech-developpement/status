@@ -1,0 +1,19 @@
+{
+  "points": [
+    {
+      "timestamp": "2026-10-01T10:50:48.199Z",
+      "isUp": true,
+      "httpStatus": 200,
+      "responseTimeMs": 797,
+      "error": null
+    }
+  ],
+  "daily": [
+    {
+      "date": "2026-10-01",
+      "checks": 1,
+      "up": 1
+    }
+  ],
+  "incidents": []
+}
