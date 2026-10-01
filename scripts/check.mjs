@@ -169,6 +169,11 @@ async function traiter(cible) {
   const [mesure, tls] = await Promise.all([sonder(cible), certificat(cible.url)]);
   const releve = { timestamp: maintenant.toISOString(), ...mesure };
 
+  // Entrée en panne : la bascule, pas l'état. C'est elle seule qui doit alerter —
+  // une coupure longue ne doit pas notifier à chaque passage.
+  const precedent = etat.points.at(-1);
+  const entreeEnPanne = !releve.isUp && (!precedent || precedent.isUp);
+
   const limite = maintenant.getTime() - JOURS_BRUTS * MS_JOUR;
   etat.points = [...etat.points, releve].filter((p) => Date.parse(p.timestamp) >= limite);
   etat.daily = majAgregat(etat.daily ?? [], releve);
@@ -180,6 +185,7 @@ async function traiter(cible) {
     id: cible.id,
     name: cible.name,
     url: cible.url,
+    entreeEnPanne,
     current: releve,
     availability: {
       last24h: disponibilite(etat.points, 1),
@@ -207,7 +213,8 @@ async function principal() {
       {
         generatedAt: maintenant.toISOString(),
         intervalMinutes: config.intervalMinutes ?? 5,
-        targets: resultats,
+        // `entreeEnPanne` est un signal d'alerte interne, pas une donnée de page.
+        targets: resultats.map(({ entreeEnPanne, ...reste }) => reste),
       },
       null,
       2,
@@ -215,7 +222,7 @@ async function principal() {
     'utf8',
   );
 
-  const indisponibles = resultats.filter((r) => !r.current.isUp);
+  const bascules = resultats.filter((r) => r.entreeEnPanne);
   for (const r of resultats) {
     const etat = r.current.isUp ? 'OK  ' : 'HORS';
     console.log(`${etat} ${r.name} — ${r.current.httpStatus ?? '—'} en ${r.current.responseTimeMs} ms`);
@@ -224,7 +231,7 @@ async function principal() {
   }
 
   if (process.env.GITHUB_OUTPUT) {
-    appendFileSync(process.env.GITHUB_OUTPUT, `down=${indisponibles.map((r) => r.name).join(', ')}\n`);
+    appendFileSync(process.env.GITHUB_OUTPUT, `down=${bascules.map((r) => r.name).join(', ')}\n`);
   }
 }
 

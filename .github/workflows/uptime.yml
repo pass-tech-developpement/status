@@ -49,25 +49,40 @@ jobs:
           set -euo pipefail
           git config user.name passtech
           git config user.email contact@pass-tech.fr
-          git add data
-          if git diff --quiet --cached; then
-            echo "Aucun changement à publier."
-            exit 0
-          fi
-          git commit -m "chore(uptime): relevé $(date -u +%FT%TZ) [skip ci]"
+
+          publier() {
+            git add data
+            if git diff --quiet --cached; then
+              echo "Aucun changement à publier."
+              return 0
+            fi
+            git commit -q -m "chore(uptime): relevé $(date -u +%FT%TZ) [skip ci]"
+            git push
+          }
+
           for essai in 1 2 3; do
-            if git push; then exit 0; fi
-            echo "Push refusé (essai $essai), rebase puis nouvelle tentative."
-            git pull --rebase --autostash
-            sleep 5
+            if publier; then exit 0; fi
+            # Les fichiers de data/ sont réécrits intégralement à chaque passage :
+            # les rejouer par rebase donne un conflit add/add systématique — c'est
+            # ce qui a fait échouer le tout premier relevé. On repart donc de
+            # l'état distant et on sonde à nouveau : quatre requêtes HTTP, et la
+            # mesure obtenue est plus fraîche.
+            echo "Publication refusée (essai $essai) : reprise sur l'état distant."
+            git fetch -q origin main
+            git reset -q --hard origin/main
+            node scripts/check.mjs
           done
           echo "::warning::Relevé non publié après trois tentatives."
           exit 1
 
       # Dernière étape : le relevé est déjà enregistré, l'échec ne sert qu'à
       # déclencher la notification GitHub aux personnes qui suivent le dépôt.
-      - name: Signaler les services indisponibles
+      #
+      # On n'échoue que sur l'ENTRÉE en panne, pas à chaque passage en panne :
+      # une coupure de trois heures enverrait sinon trente-six notifications,
+      # ce qui apprend à les ignorer.
+      - name: Signaler une entrée en panne
         if: steps.releve.outputs.down != ''
         run: |
-          echo "::error::Service(s) indisponible(s) : ${{ steps.releve.outputs.down }}"
+          echo "::error::Service(s) devenu(s) indisponible(s) : ${{ steps.releve.outputs.down }}"
           exit 1
