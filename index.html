@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>État des services — Pass Tech</title>
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<header class="entete">
+  <h1>État des services</h1>
+  <p class="accroche">
+    Sondes exécutées depuis GitHub Actions, <strong>hors de l’infrastructure surveillée</strong> :
+    cette page reste consultable même lorsque les serveurs qu’elle observe sont arrêtés.
+  </p>
+</header>
+
+<!-- Bandeau de fraîcheur : une page de supervision figée afficherait du vert.
+     C'est le premier élément rendu, et le seul qui compte si les relevés se sont arrêtés. -->
+<div id="fraicheur" class="fraicheur" role="status" hidden></div>
+
+<main id="services" class="services" aria-busy="true">
+  <p class="attente">Chargement des relevés…</p>
+</main>
+
+<section class="legende" aria-label="Légende des états">
+  <h2>Légende</h2>
+  <ul>
+    <li><span class="pastille" data-etat="good" aria-hidden="true"></span> Opérationnel — aucune mesure en échec sur la journée</li>
+    <li><span class="pastille" data-etat="warning" aria-hidden="true"></span> Dégradé — moins de 5 % des mesures en échec</li>
+    <li><span class="pastille" data-etat="serious" aria-hidden="true"></span> Perturbé — jusqu’à la moitié des mesures en échec</li>
+    <li><span class="pastille" data-etat="critical" aria-hidden="true"></span> Indisponible — majorité des mesures en échec</li>
+    <li><span class="pastille" data-etat="none" aria-hidden="true"></span> Sans mesure — la sonde n’a pas tourné ce jour-là</li>
+  </ul>
+  <p class="note">
+    La couleur ne porte jamais seule l’information : chaque état est accompagné de son libellé,
+    et le détail jour par jour est disponible sous forme de tableau dans chaque service.
+  </p>
+</section>
+
+<footer class="pied">
+  <p>
+    Relevés et code source :
+    <a href="https://github.com/pass-tech-developpement/status">pass-tech-developpement/status</a>.
+    Cette page ne remplace pas la supervision applicative — elle en constate la disponibilité.
+  </p>
+  <p id="horodatage" class="note"></p>
+</footer>
+
+<div id="infobulle" class="infobulle" role="tooltip" hidden></div>
+<script src="assets/app.js" type="module"></script>
+</body>
+</html>

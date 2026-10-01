@@ -1,0 +1,168 @@
+/*
+ * Page de statut Pass Tech.
+ *
+ * Palette d'état réservée (bon / vigilance / sérieux / critique) : ces quatre
+ * teintes ne servent jamais à autre chose, et ne portent jamais seules le sens —
+ * chaque pastille est doublée d'un libellé, chaque bande d'un tableau.
+ * Le mode sombre est choisi, pas dérivé : mêmes teintes d'état (invariantes),
+ * surfaces et encres propres.
+ */
+:root {
+  --surface: #fcfcfb;
+  --surface-2: #f4f3f0;
+  --encre: #1a1a19;
+  --encre-2: #55544f;
+  --encre-3: #86847d;
+  --bord: #e3e1db;
+
+  --etat-good: #0ca30c;
+  --etat-warning: #fab219;
+  --etat-serious: #ec835a;
+  --etat-critical: #d03b3b;
+  --etat-none: #f0efec;
+
+  --rayon: 10px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --surface: #1a1a19;
+    --surface-2: #232321;
+    --encre: #f3f2ee;
+    --encre-2: #b4b2aa;
+    --encre-3: #86847d;
+    --bord: #383835;
+    --etat-none: #383835;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0 auto;
+  max-width: 60rem;
+  padding: 2rem 1.25rem 4rem;
+  background: var(--surface);
+  color: var(--encre);
+  font: 16px/1.55 system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+h1 { font-size: 1.6rem; margin: 0 0 .35rem; }
+h2 { font-size: 1.05rem; margin: 0; }
+a { color: inherit; }
+
+.accroche { margin: 0; color: var(--encre-2); max-width: 46rem; }
+.note { color: var(--encre-3); font-size: .85rem; }
+.attente { color: var(--encre-3); }
+
+/* --- Bandeau de fraîcheur ------------------------------------------------ */
+.fraicheur {
+  margin: 1.5rem 0 0;
+  padding: .85rem 1rem;
+  border-radius: var(--rayon);
+  border: 1px solid var(--etat-critical);
+  background: color-mix(in srgb, var(--etat-critical) 10%, var(--surface));
+  display: flex;
+  gap: .6rem;
+  align-items: flex-start;
+}
+.fraicheur strong { display: block; }
+
+/* --- Services ------------------------------------------------------------ */
+.services { display: grid; gap: 1rem; margin: 1.75rem 0 2.5rem; }
+
+.service {
+  border: 1px solid var(--bord);
+  border-radius: var(--rayon);
+  background: var(--surface-2);
+  padding: 1rem 1.1rem 1.1rem;
+}
+
+.service-entete {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .6rem;
+  margin-bottom: .75rem;
+}
+.service-entete .cible { color: var(--encre-3); font-size: .85rem; word-break: break-all; }
+.service-entete .etat { font-weight: 600; margin-left: auto; }
+
+/* Pastille d'état : toujours accompagnée d'un libellé en clair. */
+.pastille {
+  width: .85rem; height: .85rem;
+  border-radius: 50%;
+  display: inline-block;
+  flex: none;
+  background: var(--etat-none);
+  /* Anneau de surface : détache la pastille du fond quand le contraste est faible. */
+  box-shadow: 0 0 0 2px var(--surface-2);
+}
+.pastille[data-etat="good"] { background: var(--etat-good); }
+.pastille[data-etat="warning"] { background: var(--etat-warning); }
+.pastille[data-etat="serious"] { background: var(--etat-serious); }
+.pastille[data-etat="critical"] { background: var(--etat-critical); }
+.pastille[data-etat="none"] { background: var(--etat-none); box-shadow: 0 0 0 1px var(--bord); }
+
+/* --- Chiffres ------------------------------------------------------------ */
+.chiffres {
+  display: flex; flex-wrap: wrap; gap: 1.5rem;
+  margin: 0 0 .9rem; padding: 0;
+}
+.chiffres > div { margin: 0; }
+.chiffres dt { color: var(--encre-3); font-size: .75rem; text-transform: uppercase; letter-spacing: .03em; }
+.chiffres dd { margin: .1rem 0 0; font-size: 1.1rem; font-variant-numeric: tabular-nums; }
+
+/* Relevés périmés : les pourcentages ne doivent plus rassurer. */
+body.perime .chiffres dd,
+body.perime .service-entete .etat { color: var(--encre-3); text-decoration: line-through; }
+
+/* --- Bande quotidienne --------------------------------------------------- */
+.bande { display: flex; gap: 2px; align-items: stretch; height: 34px; }
+.jour {
+  flex: 1 1 0;
+  min-width: 2px;
+  border-radius: 2px;
+  background: var(--etat-none);
+}
+.jour[data-etat="good"] { background: var(--etat-good); }
+.jour[data-etat="warning"] { background: var(--etat-warning); }
+.jour[data-etat="serious"] { background: var(--etat-serious); }
+.jour[data-etat="critical"] { background: var(--etat-critical); }
+.jour:hover { outline: 2px solid var(--encre); outline-offset: 1px; }
+
+.bande-reperes {
+  display: flex; justify-content: space-between;
+  color: var(--encre-3); font-size: .75rem; margin-top: .35rem;
+}
+
+/* --- Tableau ------------------------------------------------------------- */
+details { margin-top: .85rem; }
+summary { cursor: pointer; color: var(--encre-2); font-size: .9rem; }
+table { border-collapse: collapse; width: 100%; margin-top: .6rem; font-size: .85rem; }
+th, td { text-align: left; padding: .3rem .5rem; border-bottom: 1px solid var(--bord); }
+th { color: var(--encre-3); font-weight: 600; }
+td { font-variant-numeric: tabular-nums; }
+
+/* --- Légende et pied ----------------------------------------------------- */
+.legende ul { list-style: none; padding: 0; margin: .6rem 0; display: grid; gap: .35rem; }
+.legende li { display: flex; align-items: center; gap: .55rem; }
+.pied { margin-top: 2.5rem; border-top: 1px solid var(--bord); padding-top: 1rem; color: var(--encre-2); font-size: .9rem; }
+
+/* --- Infobulle ----------------------------------------------------------- */
+.infobulle {
+  position: fixed;
+  z-index: 10;
+  pointer-events: none;
+  background: var(--encre);
+  color: var(--surface);
+  padding: .4rem .6rem;
+  border-radius: 6px;
+  font-size: .8rem;
+  line-height: 1.4;
+  max-width: 18rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .jour { transition: outline-color .1s; }
+}

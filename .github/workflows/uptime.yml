@@ -1,0 +1,73 @@
+name: Sonde de disponibilité
+
+# Dépôt public : les minutes Actions ne sont pas décomptées, contrairement aux
+# dépôts privés de l'organisation (2 000 min/mois partagées sur le plan Free).
+#
+# Deux mises en garde sur les workflows planifiés de GitHub :
+#  - ils ne sont pas ponctuels : un retard de plusieurs minutes est normal, la
+#    page affiche donc l'intervalle nominal et l'âge réel du dernier relevé ;
+#  - ils sont désactivés après 60 jours sans activité sur le dépôt. Ce workflow
+#    commettant un relevé à chaque passage, l'activité ne s'interrompt jamais
+#    tant qu'il fonctionne — et s'il s'arrête, le bandeau de fraîcheur le dit.
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+    paths:
+      - 'targets.json'
+      - 'scripts/**'
+      - '.github/workflows/uptime.yml'
+
+# Pas de relevés simultanés : ils se marcheraient dessus au push et fausseraient
+# les latences.
+concurrency:
+  group: uptime
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  sonder:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Relever l'état des services
+        id: releve
+        run: node scripts/check.mjs
+
+      - name: Publier le relevé
+        run: |
+          set -euo pipefail
+          git config user.name passtech
+          git config user.email contact@pass-tech.fr
+          git add data
+          if git diff --quiet --cached; then
+            echo "Aucun changement à publier."
+            exit 0
+          fi
+          git commit -m "chore(uptime): relevé $(date -u +%FT%TZ) [skip ci]"
+          for essai in 1 2 3; do
+            if git push; then exit 0; fi
+            echo "Push refusé (essai $essai), rebase puis nouvelle tentative."
+            git pull --rebase --autostash
+            sleep 5
+          done
+          echo "::warning::Relevé non publié après trois tentatives."
+          exit 1
+
+      # Dernière étape : le relevé est déjà enregistré, l'échec ne sert qu'à
+      # déclencher la notification GitHub aux personnes qui suivent le dépôt.
+      - name: Signaler les services indisponibles
+        if: steps.releve.outputs.down != ''
+        run: |
+          echo "::error::Service(s) indisponible(s) : ${{ steps.releve.outputs.down }}"
+          exit 1

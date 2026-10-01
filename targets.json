@@ -1,0 +1,35 @@
+{
+  "intervalMinutes": 5,
+  "targets": [
+    {
+      "id": "services",
+      "name": "Supervision Pass Tech",
+      "url": "https://services.tech.fr/",
+      "comment": "Surveille le surveillant : c'est la raison d'être de cette page.",
+      "expectStatus": [200, 399],
+      "timeoutMs": 12000
+    },
+    {
+      "id": "mej-portail",
+      "name": "Portail Mon espace MEJ",
+      "url": "https://mej.tech.fr/",
+      "expectStatus": [200, 399],
+      "timeoutMs": 12000
+    },
+    {
+      "id": "mej-crm",
+      "name": "CRM Twenty (MEJ)",
+      "url": "https://mej-crm.tech.fr/healthz",
+      "comment": "Twenty expose /healthz : une sonde de santé réelle, pas la page d'accueil.",
+      "expectStatus": [200, 299],
+      "timeoutMs": 12000
+    },
+    {
+      "id": "ent-scolaire",
+      "name": "ENT scolaire",
+      "url": "https://www.ent-scolaire.fr/",
+      "expectStatus": [200, 399],
+      "timeoutMs": 15000
+    }
+  ]
+}
