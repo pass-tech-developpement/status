@@ -6,13 +6,20 @@
       "httpStatus": 200,
       "responseTimeMs": 867,
       "error": null
+    },
+    {
+      "timestamp": "2026-10-01T10:55:03.062Z",
+      "isUp": true,
+      "httpStatus": 200,
+      "responseTimeMs": 1364,
+      "error": null
     }
   ],
   "daily": [
     {
       "date": "2026-10-01",
-      "checks": 1,
-      "up": 1
+      "checks": 2,
+      "up": 2
     }
   ],
   "incidents": []
