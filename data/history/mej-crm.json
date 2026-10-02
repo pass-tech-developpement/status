@@ -41,6 +41,13 @@
       "httpStatus": 200,
       "responseTimeMs": 740,
       "error": null
+    },
+    {
+      "timestamp": "2026-10-02T13:49:22.485Z",
+      "isUp": true,
+      "httpStatus": 200,
+      "responseTimeMs": 581,
+      "error": null
     }
   ],
   "daily": [
@@ -51,8 +58,8 @@
     },
     {
       "date": "2026-10-02",
-      "checks": 2,
-      "up": 2
+      "checks": 3,
+      "up": 3
     }
   ],
   "incidents": []
