@@ -300,6 +300,13 @@
       "httpStatus": 200,
       "responseTimeMs": 481,
       "error": null
+    },
+    {
+      "timestamp": "2026-10-10T08:48:19.885Z",
+      "isUp": true,
+      "httpStatus": 200,
+      "responseTimeMs": 569,
+      "error": null
     }
   ],
   "daily": [
@@ -350,8 +357,8 @@
     },
     {
       "date": "2026-10-10",
-      "checks": 1,
-      "up": 1
+      "checks": 2,
+      "up": 2
     }
   ],
   "incidents": []
