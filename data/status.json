@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T07:15:37.727Z",
+  "generatedAt": "2026-10-11T14:10:21.902Z",
   "intervalMinutes": 5,
   "targets": [
     {
@@ -7,10 +7,10 @@
       "name": "Supervision Pass Tech",
       "url": "https://services.tech.fr/",
       "current": {
-        "timestamp": "2026-10-11T07:15:37.727Z",
+        "timestamp": "2026-10-11T14:10:21.902Z",
         "isUp": true,
         "httpStatus": 200,
-        "responseTimeMs": 529,
+        "responseTimeMs": 762,
         "error": null
       },
       "availability": {
@@ -19,13 +19,13 @@
         "last30d": 100
       },
       "latencyMs": {
-        "latest": 529,
-        "avg": 716,
+        "latest": 762,
+        "avg": 754,
         "p95": 1025
       },
       "tls": {
         "validTo": "2026-11-13T08:43:28.000Z",
-        "daysLeft": 33,
+        "daysLeft": 32,
         "issuer": "Let's Encrypt"
       },
       "daily": [
@@ -81,8 +81,8 @@
         },
         {
           "date": "2026-10-11",
-          "checks": 2,
-          "up": 2
+          "checks": 3,
+          "up": 3
         }
       ],
       "incidents": []
@@ -92,10 +92,10 @@
       "name": "Portail Mon espace MEJ",
       "url": "https://mej.tech.fr/",
       "current": {
-        "timestamp": "2026-10-11T07:15:37.727Z",
+        "timestamp": "2026-10-11T14:10:21.902Z",
         "isUp": true,
         "httpStatus": 200,
-        "responseTimeMs": 568,
+        "responseTimeMs": 892,
         "error": null
       },
       "availability": {
@@ -104,13 +104,13 @@
         "last30d": 100
       },
       "latencyMs": {
-        "latest": 568,
-        "avg": 693,
-        "p95": 833
+        "latest": 892,
+        "avg": 747,
+        "p95": 892
       },
       "tls": {
         "validTo": "2026-11-13T08:43:28.000Z",
-        "daysLeft": 33,
+        "daysLeft": 32,
         "issuer": "Let's Encrypt"
       },
       "daily": [
@@ -166,8 +166,8 @@
         },
         {
           "date": "2026-10-11",
-          "checks": 2,
-          "up": 2
+          "checks": 3,
+          "up": 3
         }
       ],
       "incidents": []
@@ -177,10 +177,10 @@
       "name": "CRM Twenty (MEJ)",
       "url": "https://mej-crm.tech.fr/healthz",
       "current": {
-        "timestamp": "2026-10-11T07:15:37.727Z",
+        "timestamp": "2026-10-11T14:10:21.902Z",
         "isUp": true,
         "httpStatus": 200,
-        "responseTimeMs": 387,
+        "responseTimeMs": 1384,
         "error": null
       },
       "availability": {
@@ -189,13 +189,13 @@
         "last30d": 100
       },
       "latencyMs": {
-        "latest": 387,
-        "avg": 608,
-        "p95": 918
+        "latest": 1384,
+        "avg": 759,
+        "p95": 1384
       },
       "tls": {
         "validTo": "2026-11-13T08:43:28.000Z",
-        "daysLeft": 33,
+        "daysLeft": 32,
         "issuer": "Let's Encrypt"
       },
       "daily": [
@@ -251,8 +251,8 @@
         },
         {
           "date": "2026-10-11",
-          "checks": 2,
-          "up": 2
+          "checks": 3,
+          "up": 3
         }
       ],
       "incidents": []
@@ -262,10 +262,10 @@
       "name": "ENT scolaire",
       "url": "https://www.ent-scolaire.fr/",
       "current": {
-        "timestamp": "2026-10-11T07:15:37.727Z",
+        "timestamp": "2026-10-11T14:10:21.902Z",
         "isUp": true,
         "httpStatus": 200,
-        "responseTimeMs": 831,
+        "responseTimeMs": 1208,
         "error": null
       },
       "availability": {
@@ -274,13 +274,13 @@
         "last30d": 100
       },
       "latencyMs": {
-        "latest": 831,
-        "avg": 1028,
+        "latest": 1208,
+        "avg": 1102,
         "p95": 1316
       },
       "tls": {
         "validTo": "2026-11-25T13:04:38.000Z",
-        "daysLeft": 45,
+        "daysLeft": 44,
         "issuer": "Let's Encrypt"
       },
       "daily": [
@@ -336,8 +336,8 @@
         },
         {
           "date": "2026-10-11",
-          "checks": 2,
-          "up": 2
+          "checks": 3,
+          "up": 3
         }
       ],
       "incidents": []
