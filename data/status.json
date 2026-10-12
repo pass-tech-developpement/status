@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-12T08:22:46.460Z",
+  "generatedAt": "2026-10-12T18:06:07.674Z",
   "intervalMinutes": 5,
   "targets": [
     {
@@ -7,10 +7,10 @@
       "name": "Supervision Pass Tech",
       "url": "https://services.tech.fr/",
       "current": {
-        "timestamp": "2026-10-12T08:22:46.460Z",
+        "timestamp": "2026-10-12T18:06:07.674Z",
         "isUp": true,
         "httpStatus": 200,
-        "responseTimeMs": 824,
+        "responseTimeMs": 687,
         "error": null
       },
       "availability": {
@@ -19,13 +19,13 @@
         "last30d": 100
       },
       "latencyMs": {
-        "latest": 824,
-        "avg": 757,
+        "latest": 687,
+        "avg": 742,
         "p95": 824
       },
       "tls": {
         "validTo": "2026-11-13T08:43:28.000Z",
-        "daysLeft": 32,
+        "daysLeft": 31,
         "issuer": "Let's Encrypt"
       },
       "daily": [
@@ -86,8 +86,8 @@
         },
         {
           "date": "2026-10-12",
-          "checks": 2,
-          "up": 2
+          "checks": 3,
+          "up": 3
         }
       ],
       "incidents": []
@@ -97,10 +97,10 @@
       "name": "Portail Mon espace MEJ",
       "url": "https://mej.tech.fr/",
       "current": {
-        "timestamp": "2026-10-12T08:22:46.460Z",
+        "timestamp": "2026-10-12T18:06:07.674Z",
         "isUp": true,
         "httpStatus": 200,
-        "responseTimeMs": 662,
+        "responseTimeMs": 571,
         "error": null
       },
       "availability": {
@@ -109,13 +109,13 @@
         "last30d": 100
       },
       "latencyMs": {
-        "latest": 662,
-        "avg": 758,
-        "p95": 892
+        "latest": 571,
+        "avg": 694,
+        "p95": 840
       },
       "tls": {
         "validTo": "2026-11-13T08:43:28.000Z",
-        "daysLeft": 32,
+        "daysLeft": 31,
         "issuer": "Let's Encrypt"
       },
       "daily": [
@@ -176,8 +176,8 @@
         },
         {
           "date": "2026-10-12",
-          "checks": 2,
-          "up": 2
+          "checks": 3,
+          "up": 3
         }
       ],
       "incidents": []
@@ -187,10 +187,10 @@
       "name": "CRM Twenty (MEJ)",
       "url": "https://mej-crm.tech.fr/healthz",
       "current": {
-        "timestamp": "2026-10-12T08:22:46.460Z",
+        "timestamp": "2026-10-12T18:06:07.674Z",
         "isUp": true,
         "httpStatus": 200,
-        "responseTimeMs": 433,
+        "responseTimeMs": 364,
         "error": null
       },
       "availability": {
@@ -199,13 +199,13 @@
         "last30d": 100
       },
       "latencyMs": {
-        "latest": 433,
-        "avg": 723,
-        "p95": 1384
+        "latest": 364,
+        "avg": 519,
+        "p95": 667
       },
       "tls": {
         "validTo": "2026-11-13T08:43:28.000Z",
-        "daysLeft": 32,
+        "daysLeft": 31,
         "issuer": "Let's Encrypt"
       },
       "daily": [
@@ -266,8 +266,8 @@
         },
         {
           "date": "2026-10-12",
-          "checks": 2,
-          "up": 2
+          "checks": 3,
+          "up": 3
         }
       ],
       "incidents": []
@@ -277,10 +277,10 @@
       "name": "ENT scolaire",
       "url": "https://www.ent-scolaire.fr/",
       "current": {
-        "timestamp": "2026-10-12T08:22:46.460Z",
+        "timestamp": "2026-10-12T18:06:07.674Z",
         "isUp": true,
         "httpStatus": 200,
-        "responseTimeMs": 991,
+        "responseTimeMs": 839,
         "error": null
       },
       "availability": {
@@ -289,13 +289,13 @@
         "last30d": 100
       },
       "latencyMs": {
-        "latest": 991,
-        "avg": 1162,
+        "latest": 839,
+        "avg": 1088,
         "p95": 1305
       },
       "tls": {
         "validTo": "2026-11-25T13:04:38.000Z",
-        "daysLeft": 44,
+        "daysLeft": 43,
         "issuer": "Let's Encrypt"
       },
       "daily": [
@@ -356,8 +356,8 @@
         },
         {
           "date": "2026-10-12",
-          "checks": 2,
-          "up": 2
+          "checks": 3,
+          "up": 3
         }
       ],
       "incidents": []
