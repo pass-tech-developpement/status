@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-13T07:05:56.484Z",
+  "generatedAt": "2026-10-13T15:00:01.488Z",
   "intervalMinutes": 5,
   "targets": [
     {
@@ -7,10 +7,10 @@
       "name": "Supervision Pass Tech",
       "url": "https://services.tech.fr/",
       "current": {
-        "timestamp": "2026-10-13T07:05:56.484Z",
+        "timestamp": "2026-10-13T15:00:01.488Z",
         "isUp": true,
         "httpStatus": 200,
-        "responseTimeMs": 865,
+        "responseTimeMs": 995,
         "error": null
       },
       "availability": {
@@ -19,13 +19,13 @@
         "last30d": 100
       },
       "latencyMs": {
-        "latest": 865,
-        "avg": 831,
-        "p95": 948
+        "latest": 995,
+        "avg": 874,
+        "p95": 995
       },
       "tls": {
         "validTo": "2026-11-13T08:43:28.000Z",
-        "daysLeft": 31,
+        "daysLeft": 30,
         "issuer": "Let's Encrypt"
       },
       "daily": [
@@ -91,8 +91,8 @@
         },
         {
           "date": "2026-10-13",
-          "checks": 2,
-          "up": 2
+          "checks": 3,
+          "up": 3
         }
       ],
       "incidents": []
@@ -102,10 +102,10 @@
       "name": "Portail Mon espace MEJ",
       "url": "https://mej.tech.fr/",
       "current": {
-        "timestamp": "2026-10-13T07:05:56.484Z",
+        "timestamp": "2026-10-13T15:00:01.488Z",
         "isUp": true,
         "httpStatus": 200,
-        "responseTimeMs": 818,
+        "responseTimeMs": 1124,
         "error": null
       },
       "availability": {
@@ -114,13 +114,13 @@
         "last30d": 100
       },
       "latencyMs": {
-        "latest": 818,
-        "avg": 917,
+        "latest": 1124,
+        "avg": 1033,
         "p95": 1618
       },
       "tls": {
         "validTo": "2026-11-13T08:43:28.000Z",
-        "daysLeft": 31,
+        "daysLeft": 30,
         "issuer": "Let's Encrypt"
       },
       "daily": [
@@ -186,8 +186,8 @@
         },
         {
           "date": "2026-10-13",
-          "checks": 2,
-          "up": 2
+          "checks": 3,
+          "up": 3
         }
       ],
       "incidents": []
@@ -197,10 +197,10 @@
       "name": "CRM Twenty (MEJ)",
       "url": "https://mej-crm.tech.fr/healthz",
       "current": {
-        "timestamp": "2026-10-13T07:05:56.484Z",
+        "timestamp": "2026-10-13T15:00:01.488Z",
         "isUp": true,
         "httpStatus": 200,
-        "responseTimeMs": 654,
+        "responseTimeMs": 749,
         "error": null
       },
       "availability": {
@@ -209,13 +209,13 @@
         "last30d": 100
       },
       "latencyMs": {
-        "latest": 654,
-        "avg": 550,
-        "p95": 747
+        "latest": 749,
+        "avg": 629,
+        "p95": 749
       },
       "tls": {
         "validTo": "2026-11-13T08:43:28.000Z",
-        "daysLeft": 31,
+        "daysLeft": 30,
         "issuer": "Let's Encrypt"
       },
       "daily": [
@@ -281,8 +281,8 @@
         },
         {
           "date": "2026-10-13",
-          "checks": 2,
-          "up": 2
+          "checks": 3,
+          "up": 3
         }
       ],
       "incidents": []
@@ -292,10 +292,10 @@
       "name": "ENT scolaire",
       "url": "https://www.ent-scolaire.fr/",
       "current": {
-        "timestamp": "2026-10-13T07:05:56.484Z",
+        "timestamp": "2026-10-13T15:00:01.488Z",
         "isUp": true,
         "httpStatus": 200,
-        "responseTimeMs": 1356,
+        "responseTimeMs": 1167,
         "error": null
       },
       "availability": {
@@ -304,13 +304,13 @@
         "last30d": 100
       },
       "latencyMs": {
-        "latest": 1356,
-        "avg": 1073,
+        "latest": 1167,
+        "avg": 1117,
         "p95": 1356
       },
       "tls": {
         "validTo": "2026-11-25T13:04:38.000Z",
-        "daysLeft": 43,
+        "daysLeft": 42,
         "issuer": "Let's Encrypt"
       },
       "daily": [
@@ -376,8 +376,8 @@
         },
         {
           "date": "2026-10-13",
-          "checks": 2,
-          "up": 2
+          "checks": 3,
+          "up": 3
         }
       ],
       "incidents": []
