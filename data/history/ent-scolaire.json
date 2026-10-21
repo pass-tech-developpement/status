@@ -762,6 +762,13 @@
       "httpStatus": 503,
       "responseTimeMs": 627,
       "error": "HTTP 503 hors de la plage attendue 200-399"
+    },
+    {
+      "timestamp": "2026-10-21T22:15:31.617Z",
+      "isUp": true,
+      "httpStatus": 200,
+      "responseTimeMs": 778,
+      "error": null
     }
   ],
   "daily": [
@@ -867,15 +874,15 @@
     },
     {
       "date": "2026-10-21",
-      "checks": 5,
-      "up": 4
+      "checks": 6,
+      "up": 5
     }
   ],
   "incidents": [
     {
       "start": "2026-10-21T18:58:12.243Z",
-      "end": null,
-      "durationMs": null,
+      "end": "2026-10-21T22:15:31.617Z",
+      "durationMs": 11839374,
       "error": "HTTP 503 hors de la plage attendue 200-399"
     }
   ]
