@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T00:44:28.485Z",
+  "generatedAt": "2026-10-22T05:28:00.574Z",
   "intervalMinutes": 5,
   "targets": [
     {
@@ -7,10 +7,10 @@
       "name": "Supervision Pass Tech",
       "url": "https://services.tech.fr/",
       "current": {
-        "timestamp": "2026-10-22T00:44:28.485Z",
+        "timestamp": "2026-10-22T05:28:00.574Z",
         "isUp": true,
         "httpStatus": 200,
-        "responseTimeMs": 1373,
+        "responseTimeMs": 742,
         "error": null
       },
       "availability": {
@@ -19,8 +19,8 @@
         "last30d": 100
       },
       "latencyMs": {
-        "latest": 1373,
-        "avg": 890,
+        "latest": 742,
+        "avg": 879,
         "p95": 1373
       },
       "tls": {
@@ -136,8 +136,8 @@
         },
         {
           "date": "2026-10-22",
-          "checks": 1,
-          "up": 1
+          "checks": 2,
+          "up": 2
         }
       ],
       "incidents": []
@@ -147,10 +147,10 @@
       "name": "Portail Mon espace MEJ",
       "url": "https://mej.tech.fr/",
       "current": {
-        "timestamp": "2026-10-22T00:44:28.485Z",
+        "timestamp": "2026-10-22T05:28:00.574Z",
         "isUp": true,
         "httpStatus": 200,
-        "responseTimeMs": 1200,
+        "responseTimeMs": 642,
         "error": null
       },
       "availability": {
@@ -159,8 +159,8 @@
         "last30d": 100
       },
       "latencyMs": {
-        "latest": 1200,
-        "avg": 779,
+        "latest": 642,
+        "avg": 725,
         "p95": 1200
       },
       "tls": {
@@ -276,8 +276,8 @@
         },
         {
           "date": "2026-10-22",
-          "checks": 1,
-          "up": 1
+          "checks": 2,
+          "up": 2
         }
       ],
       "incidents": []
@@ -287,10 +287,10 @@
       "name": "CRM Twenty (MEJ)",
       "url": "https://mej-crm.tech.fr/healthz",
       "current": {
-        "timestamp": "2026-10-22T00:44:28.485Z",
+        "timestamp": "2026-10-22T05:28:00.574Z",
         "isUp": true,
         "httpStatus": 200,
-        "responseTimeMs": 890,
+        "responseTimeMs": 527,
         "error": null
       },
       "availability": {
@@ -299,8 +299,8 @@
         "last30d": 100
       },
       "latencyMs": {
-        "latest": 890,
-        "avg": 623,
+        "latest": 527,
+        "avg": 577,
         "p95": 890
       },
       "tls": {
@@ -416,8 +416,8 @@
         },
         {
           "date": "2026-10-22",
-          "checks": 1,
-          "up": 1
+          "checks": 2,
+          "up": 2
         }
       ],
       "incidents": []
@@ -427,10 +427,10 @@
       "name": "ENT scolaire",
       "url": "https://www.ent-scolaire.fr/",
       "current": {
-        "timestamp": "2026-10-22T00:44:28.485Z",
+        "timestamp": "2026-10-22T05:28:00.574Z",
         "isUp": true,
         "httpStatus": 200,
-        "responseTimeMs": 1124,
+        "responseTimeMs": 920,
         "error": null
       },
       "availability": {
@@ -439,9 +439,9 @@
         "last30d": 99.1
       },
       "latencyMs": {
-        "latest": 1124,
-        "avg": 989,
-        "p95": 1250
+        "latest": 920,
+        "avg": 923,
+        "p95": 1124
       },
       "tls": {
         "validTo": "2026-11-25T13:04:38.000Z",
@@ -556,8 +556,8 @@
         },
         {
           "date": "2026-10-22",
-          "checks": 1,
-          "up": 1
+          "checks": 2,
+          "up": 2
         }
       ],
       "incidents": [
