@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-02T08:25:39.650Z",
+  "generatedAt": "2026-11-02T18:44:12.195Z",
   "intervalMinutes": 5,
   "targets": [
     {
@@ -7,10 +7,10 @@
       "name": "Supervision Pass Tech",
       "url": "https://services.tech.fr/",
       "current": {
-        "timestamp": "2026-11-02T08:25:39.650Z",
+        "timestamp": "2026-11-02T18:44:12.195Z",
         "isUp": true,
         "httpStatus": 200,
-        "responseTimeMs": 644,
+        "responseTimeMs": 904,
         "error": null
       },
       "availability": {
@@ -19,9 +19,9 @@
         "last30d": 100
       },
       "latencyMs": {
-        "latest": 644,
-        "avg": 715,
-        "p95": 831
+        "latest": 904,
+        "avg": 773,
+        "p95": 904
       },
       "tls": {
         "validTo": "2027-01-13T07:14:16.000Z",
@@ -191,8 +191,8 @@
         },
         {
           "date": "2026-11-02",
-          "checks": 2,
-          "up": 2
+          "checks": 3,
+          "up": 3
         }
       ],
       "incidents": []
@@ -202,10 +202,10 @@
       "name": "Portail Mon espace MEJ",
       "url": "https://mej.tech.fr/",
       "current": {
-        "timestamp": "2026-11-02T08:25:39.650Z",
+        "timestamp": "2026-11-02T18:44:12.195Z",
         "isUp": true,
         "httpStatus": 200,
-        "responseTimeMs": 561,
+        "responseTimeMs": 772,
         "error": null
       },
       "availability": {
@@ -214,8 +214,8 @@
         "last30d": 100
       },
       "latencyMs": {
-        "latest": 561,
-        "avg": 733,
+        "latest": 772,
+        "avg": 769,
         "p95": 1095
       },
       "tls": {
@@ -386,8 +386,8 @@
         },
         {
           "date": "2026-11-02",
-          "checks": 2,
-          "up": 2
+          "checks": 3,
+          "up": 3
         }
       ],
       "incidents": []
@@ -397,10 +397,10 @@
       "name": "CRM Twenty (MEJ)",
       "url": "https://mej-crm.tech.fr/healthz",
       "current": {
-        "timestamp": "2026-11-02T08:25:39.650Z",
+        "timestamp": "2026-11-02T18:44:12.195Z",
         "isUp": true,
         "httpStatus": 200,
-        "responseTimeMs": 548,
+        "responseTimeMs": 603,
         "error": null
       },
       "availability": {
@@ -409,8 +409,8 @@
         "last30d": 100
       },
       "latencyMs": {
-        "latest": 548,
-        "avg": 548,
+        "latest": 603,
+        "avg": 575,
         "p95": 637
       },
       "tls": {
@@ -581,8 +581,8 @@
         },
         {
           "date": "2026-11-02",
-          "checks": 2,
-          "up": 2
+          "checks": 3,
+          "up": 3
         }
       ],
       "incidents": []
@@ -592,23 +592,27 @@
       "name": "ENT scolaire",
       "url": "https://www.ent-scolaire.fr/",
       "current": {
-        "timestamp": "2026-11-02T08:25:39.650Z",
-        "isUp": false,
-        "httpStatus": null,
-        "responseTimeMs": 10491,
-        "error": "UND_ERR_CONNECT_TIMEOUT — fetch failed"
+        "timestamp": "2026-11-02T18:44:12.195Z",
+        "isUp": true,
+        "httpStatus": 200,
+        "responseTimeMs": 1228,
+        "error": null
       },
       "availability": {
         "last24h": 80,
-        "last7d": 97.1,
+        "last7d": 97,
         "last30d": 98.8
       },
       "latencyMs": {
-        "latest": 10491,
-        "avg": 957,
-        "p95": 1130
+        "latest": 1228,
+        "avg": 1094,
+        "p95": 1228
       },
-      "tls": null,
+      "tls": {
+        "validTo": "2027-01-24T13:04:31.000Z",
+        "daysLeft": 82,
+        "issuer": "Let's Encrypt"
+      },
       "daily": [
         {
           "date": "2026-10-01",
@@ -772,15 +776,15 @@
         },
         {
           "date": "2026-11-02",
-          "checks": 2,
-          "up": 1
+          "checks": 3,
+          "up": 2
         }
       ],
       "incidents": [
         {
           "start": "2026-11-02T08:25:39.650Z",
-          "end": null,
-          "durationMs": null,
+          "end": "2026-11-02T18:44:12.195Z",
+          "durationMs": 37112545,
           "error": "UND_ERR_CONNECT_TIMEOUT — fetch failed"
         },
         {
