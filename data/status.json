@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T01:45:26.120Z",
+  "generatedAt": "2026-11-04T08:08:45.379Z",
   "intervalMinutes": 5,
   "targets": [
     {
@@ -7,10 +7,10 @@
       "name": "Supervision Pass Tech",
       "url": "https://services.tech.fr/",
       "current": {
-        "timestamp": "2026-11-04T01:45:26.120Z",
+        "timestamp": "2026-11-04T08:08:45.379Z",
         "isUp": true,
         "httpStatus": 200,
-        "responseTimeMs": 956,
+        "responseTimeMs": 635,
         "error": null
       },
       "availability": {
@@ -19,13 +19,13 @@
         "last30d": 100
       },
       "latencyMs": {
-        "latest": 956,
-        "avg": 994,
+        "latest": 635,
+        "avg": 927,
         "p95": 1130
       },
       "tls": {
         "validTo": "2027-01-13T07:14:16.000Z",
-        "daysLeft": 70,
+        "daysLeft": 69,
         "issuer": "Let's Encrypt"
       },
       "daily": [
@@ -201,8 +201,8 @@
         },
         {
           "date": "2026-11-04",
-          "checks": 1,
-          "up": 1
+          "checks": 2,
+          "up": 2
         }
       ],
       "incidents": []
@@ -212,10 +212,10 @@
       "name": "Portail Mon espace MEJ",
       "url": "https://mej.tech.fr/",
       "current": {
-        "timestamp": "2026-11-04T01:45:26.120Z",
+        "timestamp": "2026-11-04T08:08:45.379Z",
         "isUp": true,
         "httpStatus": 200,
-        "responseTimeMs": 837,
+        "responseTimeMs": 497,
         "error": null
       },
       "availability": {
@@ -224,13 +224,13 @@
         "last30d": 100
       },
       "latencyMs": {
-        "latest": 837,
-        "avg": 789,
+        "latest": 497,
+        "avg": 713,
         "p95": 912
       },
       "tls": {
         "validTo": "2027-01-13T07:14:16.000Z",
-        "daysLeft": 70,
+        "daysLeft": 69,
         "issuer": "Let's Encrypt"
       },
       "daily": [
@@ -406,8 +406,8 @@
         },
         {
           "date": "2026-11-04",
-          "checks": 1,
-          "up": 1
+          "checks": 2,
+          "up": 2
         }
       ],
       "incidents": []
@@ -417,10 +417,10 @@
       "name": "CRM Twenty (MEJ)",
       "url": "https://mej-crm.tech.fr/healthz",
       "current": {
-        "timestamp": "2026-11-04T01:45:26.120Z",
+        "timestamp": "2026-11-04T08:08:45.379Z",
         "isUp": true,
         "httpStatus": 200,
-        "responseTimeMs": 590,
+        "responseTimeMs": 468,
         "error": null
       },
       "availability": {
@@ -429,13 +429,13 @@
         "last30d": 100
       },
       "latencyMs": {
-        "latest": 590,
-        "avg": 655,
+        "latest": 468,
+        "avg": 611,
         "p95": 800
       },
       "tls": {
         "validTo": "2027-01-13T07:14:16.000Z",
-        "daysLeft": 70,
+        "daysLeft": 69,
         "issuer": "Let's Encrypt"
       },
       "daily": [
@@ -611,8 +611,8 @@
         },
         {
           "date": "2026-11-04",
-          "checks": 1,
-          "up": 1
+          "checks": 2,
+          "up": 2
         }
       ],
       "incidents": []
@@ -622,10 +622,10 @@
       "name": "ENT scolaire",
       "url": "https://www.ent-scolaire.fr/",
       "current": {
-        "timestamp": "2026-11-04T01:45:26.120Z",
+        "timestamp": "2026-11-04T08:08:45.379Z",
         "isUp": true,
         "httpStatus": 200,
-        "responseTimeMs": 874,
+        "responseTimeMs": 696,
         "error": null
       },
       "availability": {
@@ -634,8 +634,8 @@
         "last30d": 98.7
       },
       "latencyMs": {
-        "latest": 874,
-        "avg": 972,
+        "latest": 696,
+        "avg": 872,
         "p95": 1106
       },
       "tls": {
@@ -816,8 +816,8 @@
         },
         {
           "date": "2026-11-04",
-          "checks": 1,
-          "up": 1
+          "checks": 2,
+          "up": 2
         }
       ],
       "incidents": [
