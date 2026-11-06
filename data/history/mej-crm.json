@@ -1,13 +1,6 @@
 {
   "points": [
     {
-      "timestamp": "2026-10-07T16:10:59.603Z",
-      "isUp": true,
-      "httpStatus": 200,
-      "responseTimeMs": 470,
-      "error": null
-    },
-    {
       "timestamp": "2026-10-07T21:19:51.180Z",
       "isUp": true,
       "httpStatus": 200,
@@ -1091,6 +1084,13 @@
       "httpStatus": null,
       "responseTimeMs": 10495,
       "error": "UND_ERR_CONNECT_TIMEOUT — fetch failed"
+    },
+    {
+      "timestamp": "2026-11-06T17:55:04.833Z",
+      "isUp": false,
+      "httpStatus": null,
+      "responseTimeMs": 10492,
+      "error": "UND_ERR_CONNECT_TIMEOUT — fetch failed"
     }
   ],
   "daily": [
@@ -1276,7 +1276,7 @@
     },
     {
       "date": "2026-11-06",
-      "checks": 2,
+      "checks": 3,
       "up": 0
     }
   ],

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T11:02:17.812Z",
+  "generatedAt": "2026-11-06T17:55:04.833Z",
   "intervalMinutes": 5,
   "targets": [
     {
@@ -7,16 +7,16 @@
       "name": "Supervision Pass Tech",
       "url": "https://services.tech.fr/",
       "current": {
-        "timestamp": "2026-11-06T11:02:17.812Z",
+        "timestamp": "2026-11-06T17:55:04.833Z",
         "isUp": false,
         "httpStatus": null,
-        "responseTimeMs": 10556,
+        "responseTimeMs": 10523,
         "error": "UND_ERR_CONNECT_TIMEOUT — fetch failed"
       },
       "availability": {
         "last24h": 0,
-        "last7d": 73.3,
-        "last30d": 94.9
+        "last7d": 70,
+        "last30d": 94.2
       },
       "latencyMs": {
         "latest": null,
@@ -207,7 +207,7 @@
         },
         {
           "date": "2026-11-06",
-          "checks": 2,
+          "checks": 3,
           "up": 0
         }
       ],
@@ -225,16 +225,16 @@
       "name": "Portail Mon espace MEJ",
       "url": "https://mej.tech.fr/",
       "current": {
-        "timestamp": "2026-11-06T11:02:17.812Z",
+        "timestamp": "2026-11-06T17:55:04.833Z",
         "isUp": false,
         "httpStatus": null,
-        "responseTimeMs": 10494,
+        "responseTimeMs": 10493,
         "error": "UND_ERR_CONNECT_TIMEOUT — fetch failed"
       },
       "availability": {
         "last24h": 0,
-        "last7d": 73.3,
-        "last30d": 94.9
+        "last7d": 70,
+        "last30d": 94.2
       },
       "latencyMs": {
         "latest": null,
@@ -425,7 +425,7 @@
         },
         {
           "date": "2026-11-06",
-          "checks": 2,
+          "checks": 3,
           "up": 0
         }
       ],
@@ -443,16 +443,16 @@
       "name": "CRM Twenty (MEJ)",
       "url": "https://mej-crm.tech.fr/healthz",
       "current": {
-        "timestamp": "2026-11-06T11:02:17.812Z",
+        "timestamp": "2026-11-06T17:55:04.833Z",
         "isUp": false,
         "httpStatus": null,
-        "responseTimeMs": 10495,
+        "responseTimeMs": 10492,
         "error": "UND_ERR_CONNECT_TIMEOUT — fetch failed"
       },
       "availability": {
         "last24h": 0,
-        "last7d": 73.3,
-        "last30d": 94.9
+        "last7d": 70,
+        "last30d": 94.2
       },
       "latencyMs": {
         "latest": null,
@@ -643,7 +643,7 @@
         },
         {
           "date": "2026-11-06",
-          "checks": 2,
+          "checks": 3,
           "up": 0
         }
       ],
@@ -661,10 +661,10 @@
       "name": "ENT scolaire",
       "url": "https://www.ent-scolaire.fr/",
       "current": {
-        "timestamp": "2026-11-06T11:02:17.812Z",
+        "timestamp": "2026-11-06T17:55:04.833Z",
         "isUp": true,
         "httpStatus": 200,
-        "responseTimeMs": 1182,
+        "responseTimeMs": 1129,
         "error": null
       },
       "availability": {
@@ -673,13 +673,13 @@
         "last30d": 98.7
       },
       "latencyMs": {
-        "latest": 1182,
-        "avg": 1183,
+        "latest": 1129,
+        "avg": 1170,
         "p95": 1261
       },
       "tls": {
         "validTo": "2027-01-24T13:04:31.000Z",
-        "daysLeft": 79,
+        "daysLeft": 78,
         "issuer": "Let's Encrypt"
       },
       "daily": [
@@ -865,8 +865,8 @@
         },
         {
           "date": "2026-11-06",
-          "checks": 2,
-          "up": 2
+          "checks": 3,
+          "up": 3
         }
       ],
       "incidents": [
