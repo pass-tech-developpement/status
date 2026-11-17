@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-17T02:35:31.819Z",
+  "generatedAt": "2026-11-17T11:07:35.813Z",
   "intervalMinutes": 5,
   "targets": [
     {
@@ -7,25 +7,25 @@
       "name": "Supervision Pass Tech",
       "url": "https://services.tech.fr/",
       "current": {
-        "timestamp": "2026-11-17T02:35:31.819Z",
+        "timestamp": "2026-11-17T11:07:35.813Z",
         "isUp": true,
         "httpStatus": 200,
-        "responseTimeMs": 613,
+        "responseTimeMs": 929,
         "error": null
       },
       "availability": {
         "last24h": 100,
         "last7d": 100,
-        "last30d": 93.7
+        "last30d": 93.6
       },
       "latencyMs": {
-        "latest": 613,
-        "avg": 917,
-        "p95": 1178
+        "latest": 929,
+        "avg": 834,
+        "p95": 961
       },
       "tls": {
         "validTo": "2027-01-13T07:14:16.000Z",
-        "daysLeft": 57,
+        "daysLeft": 56,
         "issuer": "Let's Encrypt"
       },
       "daily": [
@@ -266,8 +266,8 @@
         },
         {
           "date": "2026-11-17",
-          "checks": 1,
-          "up": 1
+          "checks": 2,
+          "up": 2
         }
       ],
       "incidents": [
@@ -284,25 +284,25 @@
       "name": "Portail Mon espace MEJ",
       "url": "https://mej.tech.fr/",
       "current": {
-        "timestamp": "2026-11-17T02:35:31.819Z",
+        "timestamp": "2026-11-17T11:07:35.813Z",
         "isUp": true,
         "httpStatus": 200,
-        "responseTimeMs": 532,
+        "responseTimeMs": 760,
         "error": null
       },
       "availability": {
         "last24h": 100,
         "last7d": 100,
-        "last30d": 93.7
+        "last30d": 93.6
       },
       "latencyMs": {
-        "latest": 532,
-        "avg": 694,
-        "p95": 784
+        "latest": 760,
+        "avg": 686,
+        "p95": 766
       },
       "tls": {
         "validTo": "2027-01-13T07:14:16.000Z",
-        "daysLeft": 57,
+        "daysLeft": 56,
         "issuer": "Let's Encrypt"
       },
       "daily": [
@@ -543,8 +543,8 @@
         },
         {
           "date": "2026-11-17",
-          "checks": 1,
-          "up": 1
+          "checks": 2,
+          "up": 2
         }
       ],
       "incidents": [
@@ -561,25 +561,25 @@
       "name": "CRM Twenty (MEJ)",
       "url": "https://mej-crm.tech.fr/healthz",
       "current": {
-        "timestamp": "2026-11-17T02:35:31.819Z",
+        "timestamp": "2026-11-17T11:07:35.813Z",
         "isUp": true,
         "httpStatus": 200,
-        "responseTimeMs": 430,
+        "responseTimeMs": 460,
         "error": null
       },
       "availability": {
         "last24h": 100,
         "last7d": 100,
-        "last30d": 93.7
+        "last30d": 93.6
       },
       "latencyMs": {
-        "latest": 430,
-        "avg": 691,
-        "p95": 974
+        "latest": 460,
+        "avg": 519,
+        "p95": 668
       },
       "tls": {
         "validTo": "2027-01-13T07:14:16.000Z",
-        "daysLeft": 57,
+        "daysLeft": 56,
         "issuer": "Let's Encrypt"
       },
       "daily": [
@@ -820,8 +820,8 @@
         },
         {
           "date": "2026-11-17",
-          "checks": 1,
-          "up": 1
+          "checks": 2,
+          "up": 2
         }
       ],
       "incidents": [
@@ -838,10 +838,10 @@
       "name": "ENT scolaire",
       "url": "https://www.ent-scolaire.fr/",
       "current": {
-        "timestamp": "2026-11-17T02:35:31.819Z",
+        "timestamp": "2026-11-17T11:07:35.813Z",
         "isUp": true,
         "httpStatus": 200,
-        "responseTimeMs": 697,
+        "responseTimeMs": 800,
         "error": null
       },
       "availability": {
@@ -850,8 +850,8 @@
         "last30d": 98.6
       },
       "latencyMs": {
-        "latest": 697,
-        "avg": 1043,
+        "latest": 800,
+        "avg": 936,
         "p95": 1312
       },
       "tls": {
@@ -1097,8 +1097,8 @@
         },
         {
           "date": "2026-11-17",
-          "checks": 1,
-          "up": 1
+          "checks": 2,
+          "up": 2
         }
       ],
       "incidents": [

@@ -1,20 +1,6 @@
 {
   "points": [
     {
-      "timestamp": "2026-10-18T05:45:15.778Z",
-      "isUp": true,
-      "httpStatus": 200,
-      "responseTimeMs": 669,
-      "error": null
-    },
-    {
-      "timestamp": "2026-10-18T09:56:39.149Z",
-      "isUp": true,
-      "httpStatus": 200,
-      "responseTimeMs": 656,
-      "error": null
-    },
-    {
       "timestamp": "2026-10-18T13:53:56.006Z",
       "isUp": true,
       "httpStatus": 200,
@@ -993,6 +979,13 @@
       "httpStatus": 200,
       "responseTimeMs": 532,
       "error": null
+    },
+    {
+      "timestamp": "2026-11-17T11:07:35.813Z",
+      "isUp": true,
+      "httpStatus": 200,
+      "responseTimeMs": 760,
+      "error": null
     }
   ],
   "daily": [
@@ -1233,8 +1226,8 @@
     },
     {
       "date": "2026-11-17",
-      "checks": 1,
-      "up": 1
+      "checks": 2,
+      "up": 2
     }
   ],
   "incidents": [
