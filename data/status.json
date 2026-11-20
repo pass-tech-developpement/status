@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T04:19:46.752Z",
+  "generatedAt": "2026-11-20T13:19:09.102Z",
   "intervalMinutes": 5,
   "targets": [
     {
@@ -7,25 +7,25 @@
       "name": "Supervision Pass Tech",
       "url": "https://services.tech.fr/",
       "current": {
-        "timestamp": "2026-11-20T04:19:46.752Z",
+        "timestamp": "2026-11-20T13:19:09.102Z",
         "isUp": true,
         "httpStatus": 200,
-        "responseTimeMs": 778,
+        "responseTimeMs": 1149,
         "error": null
       },
       "availability": {
         "last24h": 100,
         "last7d": 100,
-        "last30d": 93.3
+        "last30d": 93.2
       },
       "latencyMs": {
-        "latest": 778,
-        "avg": 818,
-        "p95": 992
+        "latest": 1149,
+        "avg": 940,
+        "p95": 1149
       },
       "tls": {
         "validTo": "2027-01-13T07:14:16.000Z",
-        "daysLeft": 54,
+        "daysLeft": 53,
         "issuer": "Let's Encrypt"
       },
       "daily": [
@@ -281,8 +281,8 @@
         },
         {
           "date": "2026-11-20",
-          "checks": 1,
-          "up": 1
+          "checks": 2,
+          "up": 2
         }
       ],
       "incidents": [
@@ -299,25 +299,25 @@
       "name": "Portail Mon espace MEJ",
       "url": "https://mej.tech.fr/",
       "current": {
-        "timestamp": "2026-11-20T04:19:46.752Z",
+        "timestamp": "2026-11-20T13:19:09.102Z",
         "isUp": true,
         "httpStatus": 200,
-        "responseTimeMs": 625,
+        "responseTimeMs": 773,
         "error": null
       },
       "availability": {
         "last24h": 100,
         "last7d": 100,
-        "last30d": 93.3
+        "last30d": 93.2
       },
       "latencyMs": {
-        "latest": 625,
-        "avg": 633,
+        "latest": 773,
+        "avg": 705,
         "p95": 825
       },
       "tls": {
         "validTo": "2027-01-13T07:14:16.000Z",
-        "daysLeft": 54,
+        "daysLeft": 53,
         "issuer": "Let's Encrypt"
       },
       "daily": [
@@ -573,8 +573,8 @@
         },
         {
           "date": "2026-11-20",
-          "checks": 1,
-          "up": 1
+          "checks": 2,
+          "up": 2
         }
       ],
       "incidents": [
@@ -591,25 +591,25 @@
       "name": "CRM Twenty (MEJ)",
       "url": "https://mej-crm.tech.fr/healthz",
       "current": {
-        "timestamp": "2026-11-20T04:19:46.752Z",
+        "timestamp": "2026-11-20T13:19:09.102Z",
         "isUp": true,
         "httpStatus": 200,
-        "responseTimeMs": 634,
+        "responseTimeMs": 849,
         "error": null
       },
       "availability": {
         "last24h": 100,
         "last7d": 100,
-        "last30d": 93.3
+        "last30d": 93.2
       },
       "latencyMs": {
-        "latest": 634,
-        "avg": 561,
-        "p95": 762
+        "latest": 849,
+        "avg": 681,
+        "p95": 849
       },
       "tls": {
         "validTo": "2027-01-13T07:14:16.000Z",
-        "daysLeft": 54,
+        "daysLeft": 53,
         "issuer": "Let's Encrypt"
       },
       "daily": [
@@ -865,8 +865,8 @@
         },
         {
           "date": "2026-11-20",
-          "checks": 1,
-          "up": 1
+          "checks": 2,
+          "up": 2
         }
       ],
       "incidents": [
@@ -883,10 +883,10 @@
       "name": "ENT scolaire",
       "url": "https://www.ent-scolaire.fr/",
       "current": {
-        "timestamp": "2026-11-20T04:19:46.752Z",
+        "timestamp": "2026-11-20T13:19:09.102Z",
         "isUp": true,
         "httpStatus": 200,
-        "responseTimeMs": 811,
+        "responseTimeMs": 873,
         "error": null
       },
       "availability": {
@@ -895,13 +895,13 @@
         "last30d": 98.5
       },
       "latencyMs": {
-        "latest": 811,
-        "avg": 892,
+        "latest": 873,
+        "avg": 917,
         "p95": 1226
       },
       "tls": {
         "validTo": "2027-01-24T13:04:31.000Z",
-        "daysLeft": 65,
+        "daysLeft": 64,
         "issuer": "Let's Encrypt"
       },
       "daily": [
@@ -1157,8 +1157,8 @@
         },
         {
           "date": "2026-11-20",
-          "checks": 1,
-          "up": 1
+          "checks": 2,
+          "up": 2
         }
       ],
       "incidents": [
