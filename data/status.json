@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T04:12:39.484Z",
+  "generatedAt": "2026-11-25T14:31:13.392Z",
   "intervalMinutes": 5,
   "targets": [
     {
@@ -7,25 +7,25 @@
       "name": "Supervision Pass Tech",
       "url": "https://services.tech.fr/",
       "current": {
-        "timestamp": "2026-11-25T04:12:39.484Z",
+        "timestamp": "2026-11-25T14:31:13.392Z",
         "isUp": true,
         "httpStatus": 200,
-        "responseTimeMs": 620,
+        "responseTimeMs": 1011,
         "error": null
       },
       "availability": {
         "last24h": 100,
         "last7d": 100,
-        "last30d": 92.4
+        "last30d": 92.3
       },
       "latencyMs": {
-        "latest": 620,
-        "avg": 667,
-        "p95": 792
+        "latest": 1011,
+        "avg": 808,
+        "p95": 1011
       },
       "tls": {
         "validTo": "2027-01-13T07:14:16.000Z",
-        "daysLeft": 49,
+        "daysLeft": 48,
         "issuer": "Let's Encrypt"
       },
       "daily": [
@@ -306,8 +306,8 @@
         },
         {
           "date": "2026-11-25",
-          "checks": 1,
-          "up": 1
+          "checks": 2,
+          "up": 2
         }
       ],
       "incidents": [
@@ -324,25 +324,25 @@
       "name": "Portail Mon espace MEJ",
       "url": "https://mej.tech.fr/",
       "current": {
-        "timestamp": "2026-11-25T04:12:39.484Z",
+        "timestamp": "2026-11-25T14:31:13.392Z",
         "isUp": true,
         "httpStatus": 200,
-        "responseTimeMs": 592,
+        "responseTimeMs": 871,
         "error": null
       },
       "availability": {
         "last24h": 100,
         "last7d": 100,
-        "last30d": 92.4
+        "last30d": 92.3
       },
       "latencyMs": {
-        "latest": 592,
-        "avg": 581,
-        "p95": 592
+        "latest": 871,
+        "avg": 680,
+        "p95": 871
       },
       "tls": {
         "validTo": "2027-01-13T07:14:16.000Z",
-        "daysLeft": 49,
+        "daysLeft": 48,
         "issuer": "Let's Encrypt"
       },
       "daily": [
@@ -623,8 +623,8 @@
         },
         {
           "date": "2026-11-25",
-          "checks": 1,
-          "up": 1
+          "checks": 2,
+          "up": 2
         }
       ],
       "incidents": [
@@ -641,25 +641,25 @@
       "name": "CRM Twenty (MEJ)",
       "url": "https://mej-crm.tech.fr/healthz",
       "current": {
-        "timestamp": "2026-11-25T04:12:39.484Z",
+        "timestamp": "2026-11-25T14:31:13.392Z",
         "isUp": true,
         "httpStatus": 200,
-        "responseTimeMs": 468,
+        "responseTimeMs": 681,
         "error": null
       },
       "availability": {
         "last24h": 100,
         "last7d": 100,
-        "last30d": 92.4
+        "last30d": 92.3
       },
       "latencyMs": {
-        "latest": 468,
-        "avg": 444,
-        "p95": 495
+        "latest": 681,
+        "avg": 548,
+        "p95": 681
       },
       "tls": {
         "validTo": "2027-01-13T07:14:16.000Z",
-        "daysLeft": 49,
+        "daysLeft": 48,
         "issuer": "Let's Encrypt"
       },
       "daily": [
@@ -940,8 +940,8 @@
         },
         {
           "date": "2026-11-25",
-          "checks": 1,
-          "up": 1
+          "checks": 2,
+          "up": 2
         }
       ],
       "incidents": [
@@ -958,25 +958,25 @@
       "name": "ENT scolaire",
       "url": "https://www.ent-scolaire.fr/",
       "current": {
-        "timestamp": "2026-11-25T04:12:39.484Z",
+        "timestamp": "2026-11-25T14:31:13.392Z",
         "isUp": true,
         "httpStatus": 200,
-        "responseTimeMs": 874,
+        "responseTimeMs": 1103,
         "error": null
       },
       "availability": {
         "last24h": 100,
         "last7d": 100,
-        "last30d": 99.2
+        "last30d": 99.1
       },
       "latencyMs": {
-        "latest": 874,
-        "avg": 833,
-        "p95": 874
+        "latest": 1103,
+        "avg": 918,
+        "p95": 1103
       },
       "tls": {
         "validTo": "2027-01-24T13:04:31.000Z",
-        "daysLeft": 60,
+        "daysLeft": 59,
         "issuer": "Let's Encrypt"
       },
       "daily": [
@@ -1257,8 +1257,8 @@
         },
         {
           "date": "2026-11-25",
-          "checks": 1,
-          "up": 1
+          "checks": 2,
+          "up": 2
         }
       ],
       "incidents": [
